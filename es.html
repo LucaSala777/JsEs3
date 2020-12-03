@@ -14,27 +14,23 @@ var sot=$("#sottrazione");
 var molt=$("#moltiplicazione");
 var divi=$("#divisione");
 sum.on("click", function(){
-    var num1=parseInt($("#num1").val());
-    var num2=parseInt($("#num2").val());
-$("#risu").html("Risultato = "+(num1+num2));
+var risultato=(parseInt($("#num1").val())+parseInt($("#num2").val()));
+$("#risu").html("Risultato = "+risultato);
 });
 
 sot.on("click", function(){
-    var num1=parseInt($("#num1").val());
-    var num2=parseInt($("#num2").val());
-$("#risu").html("Risultato = "+(num1-num2));
+    var risultato=(parseInt($("#num1").val())-parseInt($("#num2").val()));
+    $("#risu").html("Risultato = "+risultato);
 });
 
 molt.on("click", function(){
-    var num1=parseInt($("#num1").val());
-    var num2=parseInt($("#num2").val());
-$("#risu").html("Risultato = "+(num1*num2));
+    var risultato=(parseInt($("#num1").val())*parseInt($("#num2").val()));
+    $("#risu").html("Risultato = "+risultato);
 });
 
 divi.on("click", function(){
-    var num1=parseInt($("#num1").val());
-    var num2=parseInt($("#num2").val());
-$("#risu").html("Risultato = "+(num1/num2));
+    var risultato=(parseInt($("#num1").val())/parseInt($("#num2").val()));
+    $("#risu").html("Risultato = "+risultato);
 });
 
     </script>
