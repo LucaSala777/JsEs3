@@ -10,25 +10,23 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
 
-var sum=$("#somma");
-var sot=$("#sottrazione");
-var molt=$("#moltiplicazione");
-var divi=$("#divisione");
-sum.on("click", function(){
-$("#risu").html("Risultato = "+(parseInt($("#num1").val())+parseInt($("#num2").val())));
+
+$("#somma").on("click", function(){
+    $("#risu").html("Risultato = "+(parseInt($("#num1").val())+parseInt($("#num2").val())));
 });
 
-sot.on("click", function(){
+$("#sottrazione").on("click", function(){
     $("#risu").html("Risultato = "+(parseInt($("#num1").val())-parseInt($("#num2").val())));
 });
 
-molt.on("click", function(){
+$("#moltiplicazione").on("click", function(){
     $("#risu").html("Risultato = "+(parseInt($("#num1").val())*parseInt($("#num2").val())));
 });
 
-divi.on("click", function(){
+$("#divisione").on("click", function(){
     $("#risu").html("Risultato = "+(parseInt($("#num1").val())/parseInt($("#num2").val())));
 });
+
 
     </script>
     </body>
