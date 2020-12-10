@@ -58,14 +58,16 @@
             risultato = n1 * n2;
             break;
         }
-        
-        $("#tabella").append("<tr><td>"+n1+"</td><td>"+segno+"</td><td>"+n2+"</td><td>"+risultato+"</td></tr>");
+        var x=1;
+        $("#tabella").append("<tr id="+'"riga"'+"><td>"+n1+"</td><td>"+segno+"</td><td>"+n2+"</td><td>"+risultato+"</td><td><button id="+'"btn5"'+">Rimuovi</button></td></tr>");
+            $("#btn5").click(function () {
+                $("#tabella").remove();
+      });
       }
       //var isco = $("body").append($("<h3>wow</h3>"));
     </script>
     
-    
-    </table>
+  
     <style>
         table {
         border-collapse:collapse
