@@ -14,7 +14,7 @@
 
     <label for="num1">numero1:</label>
     <input type="number" id="num1" name="num1" /><br /><br />
-    <label for="num2">numer2:</label>
+    <label for="num2">numero2:</label>
     <input type="number" id="num2" name="num2" /><br /><br />
     <button id="btn1">+</button>
     <button id="btn2">-</button>
@@ -27,6 +27,12 @@
 </table>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
+      if(typeof ultimaOperaz==="undefined" || ultimaOperaz ===null){
+        $("#tab").append(localStorage.getItem("operazione"));
+      }
+    </script>
+    <script>
+
       $("#btn1").click(function () {
         calcola("+");
       });
@@ -59,10 +65,13 @@
             break;
         }
         var x=1;
+        
         $("#tabella").append("<tr id="+'"riga"'+"><td>"+n1+"</td><td>"+segno+"</td><td>"+n2+"</td><td>"+risultato+"</td><td><button id="+'"btn5"'+">Rimuovi</button></td></tr>");
             $("#btn5").click(function () {
                 $("#tabella").remove();
       });
+      var ultimaOperaz=localStorage.setItem("operazione", string);
+      
       }
       //var isco = $("body").append($("<h3>wow</h3>"));
     </script>
